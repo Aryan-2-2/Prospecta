@@ -55,5 +55,21 @@ public class ApplicationController {
                     return new  ResponseEntity<String>(message, HttpStatus.ACCEPTED);
 	    }
 	
-	
+	/*Third question : 
+	 * How can we make this application secure and reliable?
+	 * 
+	 * to make it reliable we can use exception handling in this
+	 * application i added the global exception handler so that
+	 * if any exception occurred client will get the problem response
+	 * in a proper formate.
+	 * 
+	 * we can use validation by validating the data we restrict 
+	 * the client by passing invalid data.
+	 * 
+	 * and for security we can use spring security for login 
+	 * and we can also create registration for our client.
+	 * we can add role based authorization using spring security
+	 * we can restrict who can send the GET request POST request.   
+	 * 
+	 * */
 }
